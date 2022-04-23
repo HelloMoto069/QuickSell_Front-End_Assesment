@@ -1,26 +1,11 @@
-import React from 'react'
 import './App.css';
-import Form from './components/Form';
-import Counter from './components/Counter';
-import CounterValue from './components/CounterValue';
-import { useSelector } from 'react-redux';
-
+import { Counter } from "./component/Counter"
 
 function App() {
-
-  const isSubmited = useSelector(state => state.isSubmited);
-
   return (
-    <div className="App">
-      {(isSubmited) ?
-        <>
-          <Counter />
-          <CounterValue />
-        </>
-        :
-        <Form />
-      }
-    </div>
+    <>
+      <Counter />
+    </>
   );
 }
 
