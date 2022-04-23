@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.block {
+  width: 60px;
+  height: 56px;
+  font-size: 21px;
+  font-weight: 900;
+  font-family: inherit;
+  /* border-color:2px solid #B24242; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#plus {
+  background-color:#B24242;
+  border-radius: 0px 8px 8px 0px;
+  border-bottom : 1px solid #B24242;
+  border-top : 1px solid #B24242;
+  border-right : 1px solid #B24242;
+  border-left: 0px;
+  color: white;
+  
+}
+
+#minus {
+  background-color:#FFFFFF;
+  border-radius: 8px 0px 0px 8px;
+  border: 1px solid #B24242;
+  border-right: 0px;
+  color: #B24242;
+}
+
+#display{
+  width: 60px;
+  height: 56px;
+  background-color: #FBE8E8;
+  text-align: center;
+  border: 1px solid #B24242;
+  color: #B24242;
+  
+}
+.main {
+  margin: 0px;
+    height: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    
+}
+
+.rect{
+    padding: 100px;
+    padding-top: 60px;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left:40%;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.12);
+}
+
+.statement{
+  font-size: 12px;
+  margin-top: 10px;
+}
+ 
+.loader{
+  border: 2px solid #f3f3f3; 
+  border-top: 2px solid black;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 2s linear infinite; 
+  margin-right: 10px;
+}
+
+.flex{
+  margin-bottom: 10px;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }
